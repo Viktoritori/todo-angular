@@ -1,0 +1,26 @@
+<mat-card class="main-container">
+  <mat-card-header class="main" style="font-size:30px; margin-bottom:30px;">
+    LOGIN FORM
+  </mat-card-header>
+
+  <mat-card-content class="main">
+    <form class="example-container" [formGroup]="form" >
+      <div class="form-container">
+        <mat-form-field class="example-full-width">
+          <input matInput formControlName="login" placeholder="Enter your login">
+        </mat-form-field>
+        <mat-radio-group formControlName="role" style="margin-left: 30px;">
+          <mat-radio-button value="User" style="margin-right:5px">User</mat-radio-button>
+          <mat-radio-button value="Admin">Admin</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </form>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-button color="primary" (click)="login()" class="button" [disabled]="form.invalid">
+      Login
+    </button>
+  </mat-card-actions>
+</mat-card>
+

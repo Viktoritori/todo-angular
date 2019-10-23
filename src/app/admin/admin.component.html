@@ -1,0 +1,21 @@
+<mat-card >
+  <div class="header-buttons">
+    <button mat-raised-button color="accent" (click)="openTodoDialog()" class="button">
+      Add new ToDo
+    </button>
+  </div>
+  <div class="admin-body-container">
+      <div *ngFor="let todo of todos" class="todo-container">
+        <div class="task">{{todo.task}} <span style="margin-left: 30px">{{todo.urgency}}</span></div>
+        <div class="edit">
+          <button mat-button color="warn" (click)="openTodoDialog(todo)" class="button">
+            Edit
+          </button>
+          <button mat-button color="warn"(click)="remove(todo)" class="button">
+            Remove
+          </button>
+        </div>
+        <mat-divider></mat-divider>
+      </div>
+  </div>
+</mat-card>

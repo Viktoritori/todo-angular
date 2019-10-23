@@ -1,0 +1,22 @@
+.todo-container {
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+mat-card {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.task {
+  padding-top: 8px;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+

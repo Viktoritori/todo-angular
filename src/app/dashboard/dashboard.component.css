@@ -1,0 +1,18 @@
+
+.btn {
+  margin: 15px;
+  width: 200px;
+}
+
+mat-card {
+  width: 50%;
+  margin: 0 auto;
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+  font-family: 'ZCOOL XiaoWei', serif;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
