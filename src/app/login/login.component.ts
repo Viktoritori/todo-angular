@@ -21,7 +21,6 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    console.log(this.form.getRawValue());
     this.authService.setUser(this.form.getRawValue());
   }
 }
