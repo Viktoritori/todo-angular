@@ -1,0 +1,21 @@
+<form  [formGroup]="form" >
+  <div class="form-container">
+    <mat-form-field class="example-full-width">
+      <input matInput formControlName="task" placeholder="Task Name" maxlength="30">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Urgency</mat-label>
+      <mat-select formControlName="urgency">
+        <mat-option [value]="'Urgent'">
+          Urgent
+        </mat-option>
+        <mat-option [value]="'Lazy'">
+          Lazy
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <button mat-raised-button color="accent" (click)="save()" class="button">
+    Save
+  </button>
+</form>

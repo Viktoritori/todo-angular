@@ -1,0 +1,15 @@
+<header>
+  <nav class="navbar navbar-expand">
+    <div class="container">
+      <div class="collapse navbar-collapse">
+        <div class="navbar-nav" >
+          <div class="nav-item" *ngFor="let route of routes" routerLinkActive="active" >
+            <button class="nav-link" [routerLink]="route.path" mat-raised-button color="primary">
+              {{route.data['label']}}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,11 @@
+.navbar-nav {
+  display: flex;
+}
+
+.navbar {
+  margin: 10px;
+}
+
+.nav-item {
+  padding-right: 10px;
+}
