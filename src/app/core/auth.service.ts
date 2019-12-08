@@ -3,11 +3,11 @@ import {User} from '../shared/user.class';
 
 @Injectable({providedIn: 'root'})
 export class AuthService {
-  currentUser: User ;
+  currentUser;
 
   constructor() {}
 
-  setUser(user: User) {
+  setUser(user) {
     this.currentUser = new User(user);
   }
 

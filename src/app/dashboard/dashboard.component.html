@@ -1,8 +1,14 @@
-
 <mat-card class="container">
   <h4>Todos</h4>
-  <mat-table [dataSource]="dataSource" class="mat-elevation-z8" class="table">
 
+  <div class="" [formGroup]="form">
+    <button mat-raised-button label="search" color="accent" (click)="filterTask()" class="button">
+      Search
+    </button>
+    <input type="text" id="search" formControlName="search" placeholder="Type anything" >
+  </div>
+
+    <mat-table [dataSource]="tasksToShow" class="mat-elevation-z8" class="table">
     <ng-container matColumnDef="task">
       <mat-header-cell *matHeaderCellDef> Task </mat-header-cell>
       <mat-cell *matCellDef="let element"> {{element.task}} </mat-cell>
@@ -17,7 +23,7 @@
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
   </mat-table>
-  <div style="margin-top: 10px">Total count {{dataSource.length}}</div>
+  <div style="margin-top: 10px">Total count {{tasksToShow.length}}</div>
 </mat-card>
 
 

@@ -29,6 +29,7 @@ export class TodoEditComponent implements OnInit {
     if (this.editMode) {
       this.setInitValues();
     }
+
   }
 
   save() {
